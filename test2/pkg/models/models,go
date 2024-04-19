@@ -1,0 +1,16 @@
+package models
+
+import (
+	"errors"
+)
+
+var ErrRecordNotFound = errors.New("models: no matching record found")
+
+// A struct to hold a quote
+type employee struct {
+	employee_id   int
+	employee_name string
+	email         string
+	job           string
+	salary        int
+}
